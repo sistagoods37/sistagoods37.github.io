@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Yes</title>
+    <title>JZ Lounge</title>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <script>
-        setTimeout(function() {
+        let phrases = [
+            'Adjusting Bell Curves',
+            'Aligning Covariance Matrices',
+            'Applying Layers',
+            'Calculating Inverse Probability Matrices',
+            'Cohorting Exemplars',
+            'Compounding Inert Tessellations',
+            'Compressing Files',
+            'Containing Existential Buffer',
+            'Decomposing Singular Values',
+            'Decrementing Tectonic Plates',
+            'Depositing Slush Funds',
+            'Destabilizing Economic Indicators',
+            'Dicing Models',
+            'Downloading Satellite Terrain Data',
+            'Fixing Election Outcome Matrix',
+            'Flushing Pipe Network',
+            'Gathering Particle Sources',
+            'Gesticulating Mimes',
+            'Graphing Whale Migrations',
+            'Increasing Accuracy of Simulators',
+            'Increasing Magmafacation',
+            'Integrating Curves',
+            'Integrating Illumination Form Factors',
+            'Integrating Population Graphs',
+            'Iterating Cellular Automata',
+            'Lecturing Errant Subsystems',
+            'Mixing Genetic Pool',
+            'Modeling Object Components',
+            'Normalizing',
+            'Obfuscating Quigley Matrix',
+            'Partitioning Singularities',
+            'Perturbing Matrices',
+            'Populating Templates',
+            'Realigning Alternate Time Frames',
+            'Reconfiguring Processes',
+            'Resolving GUID Conflict',
+            'Reticulating Splines',
+            'Retrieving from Back Store',
+            'Reverse Engineering Image Consultant',
+            'Routing Neural Network Infanstructure',
+            'Scrubbing Terrain',
+            'Searching for Llamas',
+            'Seeding Architecture Simulation Parameters',
+            'Sequencing Particles',
+            'Determining Advisor Moods',
+            'Calculating Inner Deity Indicators',
+            'Calculating Universal Physical Constants',
+            'Speculating Stock Market Indices',
+            'Splatting Transforms',
+            'Sub-Sampling Water Data',
+            'Synthesizing Gravity',
+            'Synthesizing Wavelets',
+            'Time-Compressing Simulator Clock',
+            'Zeroing Crime Network'
+        ]
 
-        var spinnerClass = '.loader';
-        $(spinnerClass).fadeOut(2000, function () {
-            $('#text').fadeIn(2000);
-        });
-        
+
+        setTimeout(function () {
+
+            var spinnerClass = '.spinner';
+            $(spinnerClass).fadeOut(2000, function () {
+                $('#text').fadeIn(2000);
+                $('#phrase').remove();
+            });
+
         }, 5000);
-    </script>
-    <div class="container text-center">
-        <div class="loader">Loading...</div>
 
+        var phraseFunction = function() {
+            var randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+            $('#phrase').text(randomPhrase + "...");
+        };
+
+        $(document).ready(function() {
+            phraseFunction();
+        });
+
+        setInterval(phraseFunction, 2000);
+
+    </script>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    <div class="container text-center">
+        <p id="phrase"></p>
+        
         <h1 id="text">YES</h1>
     </div>
+    </div>
 </body>
+
 </html>
