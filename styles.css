@@ -1,6 +1,5 @@
 #text {
-    margin: 26vh auto;
-    font-size: 20vh;
+    margin: 100px auto;
     display:none;
 }
 
@@ -10,16 +9,16 @@ body {
 
 .spinner {
   margin: 100px auto;
-  width: 40vh;
-  height: 20vh;
+  width: 350px;
+  height: 200px;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .spinner > div {
-  background-color: rgb(0, 163, 87);
+  background-color: rgb(0, 165, 36);
   height: 100%;
-  width: 15px;
+  width: 25px;
   display: inline-block;
   
   -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
