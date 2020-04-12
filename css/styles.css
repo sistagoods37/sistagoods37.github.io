@@ -1,6 +1,19 @@
-#text {
+#yes {
     margin: 100px auto;
-    display:none;
+    font-size: 10vh;
+}
+
+.text {
+  font-size: 8vw;
+}
+
+.appear {
+  display:none;
+}
+
+img {
+  width: 80vw;
+  height: auto;
 }
 
 body {
@@ -58,4 +71,17 @@ body {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+@media (min-width: 820px) {
+  
+  img {
+    width: 40vw;
+    height: auto;
+  }
+
+  .text {
+    font-size: 4vw;
+  }
+
 }
